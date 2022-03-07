@@ -115,7 +115,7 @@ public class Cliente {
                 telefono + "  " +
                 direccion + "  " +
                 correoElectronico + "  " +
-                numeroHabitaciones +
+                numeroHabitaciones + "  " +
                 tipoHabitacion + "  " +
                 tipoCamas + "  " +
                 vip + "  " +
