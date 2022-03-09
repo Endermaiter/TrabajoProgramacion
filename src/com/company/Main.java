@@ -2,12 +2,21 @@ package com.company;
 
 import marcos.pack.LerDatos;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
-
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                JFrame frame = new Menu();
+                frame.setSize(300,300);
+                frame.setVisible(true);
+            }
+        });
+        /*
         ArrayList<Cliente>listadoReservas = new ArrayList<>();
 
         String[]titulos = {"DNI  ","  NOMBRE  ","  TELEFONO  ","  DIRECCION  ","  CORREO ELECTRONICO  ","  NUMERO HABITACIONES  ","  TIPO DE HABITACION  ","  TIPO DE CAMAS  ","  VIP  ","  GARAJE"};
@@ -38,5 +47,8 @@ public class Main {
                     System.exit(0);
             }
         }while(opcion<10);
+
+         */
     }
+
 }
