@@ -8,10 +8,11 @@ import java.util.ArrayList;
 public class Menu extends JFrame{
     private JButton button1;
     private JButton mostrarReservasButton;
-    private JButton button3;
-    private JButton button4;
-    private JButton button5;
+    private JButton eliminarReservaButton;
+    private JButton consultarReservaButton;
+    private JButton salirButton;
     private JPanel panel1;
+    private JButton modificarReservaButton;
 
     public Menu() {
         super("RESERVAS DEL HOTEL");
@@ -20,7 +21,7 @@ public class Menu extends JFrame{
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            ArrayMethods.añadirReserva(listadoReservas);
+            ArrayMethods.añadirReserva();
             }
         });
         mostrarReservasButton.addActionListener(new ActionListener() {
@@ -29,5 +30,7 @@ public class Menu extends JFrame{
             ArrayMethods.mostrarReservas(listadoReservas);
             }
         });
+
+
     }
 }

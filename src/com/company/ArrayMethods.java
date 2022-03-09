@@ -6,16 +6,15 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class ArrayMethods extends JFrame {
-    ArrayList<Cliente> reservas = new ArrayList<Cliente>();
 
-    public static ArrayList<Cliente> añadirReserva(ArrayList<Cliente>reservas){
+    public static ArrayList<Cliente> añadirReserva(){
+        ArrayList<Cliente>reservas = new ArrayList<>();
         reservas.add(new Cliente(LerDatos.lerString("Inserte el DNI:"),
                                  LerDatos.lerString("Inserte el nombre:"),
                                  LerDatos.lerInt("Inserte el TLF:"),
                                  LerDatos.lerString("Inserte la direccion:"),
                                  LerDatos.lerString("Inserte el correo electronico:"),
-                                 LerDatos.lerInt("Inserte el numero de habitaciones:"),
-
+                                 LerDatos.lerInt("Inserte el numero de habitacion:"),
                                  LerDatos.lerString("Inserte el tipo de habitacion"),
                                  LerDatos.lerString("Inserte el tipo de camas:"),
                                  LerDatos.lerBoolean("¿El cliente es VIP? (true/false)"),
@@ -24,8 +23,10 @@ public class ArrayMethods extends JFrame {
     }
 
     public static void mostrarReservas(ArrayList<Cliente>reservas){
+      JOptionPane.showMessageDialog(null,"DNI    NOMBRE    TELEFONO   DIRECCION    CORREO ELECTRONICO   NUMERO HABITACIONES    TIPO DE HABITACION    TIPO DE CAMAS    VIP   GARAJE");
+
         for(int i=0; i< reservas.size(); i++){
-            System.out.println(reservas);
-        }
+            JOptionPane.showMessageDialog(null, reservas);
+     }
     }
 }

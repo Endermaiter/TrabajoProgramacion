@@ -6,21 +6,19 @@ public class Cliente {
     private int telefono;
     private String direccion;
     private String correoElectronico;
-    private int numeroHabitaciones;
-    private int[]codHabitacion;
+    private int numeroHabitacion; // solo puede coger una habitacion
     private String tipoHabitacion; //suit o normal
     private String tipoCamas; //doble, triple, unitaria...etc
     private boolean vip;
     private boolean garaje;
 
-    public Cliente(String dni, String nombre, int telefono, String direccion, String correoElectronico, int numeroHabitaciones, int[] codHabitacion, String tipoHabitacion, String tipoCamas, boolean vip, boolean garaje) {
+    public Cliente(String dni, String nombre, int telefono, String direccion, String correoElectronico, int numeroHabitacion, String tipoHabitacion, String tipoCamas, boolean vip, boolean garaje) {
         this.dni = dni;
         this.nombre = nombre;
         this.telefono = telefono;
         this.direccion = direccion;
         this.correoElectronico = correoElectronico;
-        this.numeroHabitaciones = numeroHabitaciones;
-        this.codHabitacion = codHabitacion;
+        this.numeroHabitacion = numeroHabitacion;
         this.tipoHabitacion = tipoHabitacion;
         this.tipoCamas = tipoCamas;
         this.vip = vip;
@@ -67,20 +65,12 @@ public class Cliente {
         this.correoElectronico = correoElectronico;
     }
 
-    public int getNumeroHabitaciones() {
-        return numeroHabitaciones;
+    public int getNumeroHabitacion() {
+        return numeroHabitacion;
     }
 
-    public void setNumeroHabitaciones(int numeroHabitaciones) {
-        this.numeroHabitaciones = numeroHabitaciones;
-    }
-
-    public int[] getCodHabitacion() {
-        return codHabitacion;
-    }
-
-    public void setCodHabitacion(int[] codHabitacion) {
-        this.codHabitacion = codHabitacion;
+    public void setNumeroHabitacion(int numeroHabitacion) {
+        this.numeroHabitacion = numeroHabitacion;
     }
 
     public String getTipoHabitacion() {
@@ -122,7 +112,7 @@ public class Cliente {
                 telefono + "  " +
                 direccion + "  " +
                 correoElectronico + "  " +
-                numeroHabitaciones + "  " +
+                numeroHabitacion + "  " +
                 tipoHabitacion + "  " +
                 tipoCamas + "  " +
                 vip + "  " +

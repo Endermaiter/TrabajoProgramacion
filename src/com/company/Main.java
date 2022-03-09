@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
+        ArrayList<Cliente> reservas = new ArrayList<Cliente>();
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
@@ -16,6 +17,9 @@ public class Main {
                 frame.setVisible(true);
             }
         });
+
+        Writing escritura = new Writing();
+        escritura.escribirObxectos("listado de reservas");
         /*
         ArrayList<Cliente>listadoReservas = new ArrayList<>();
 
