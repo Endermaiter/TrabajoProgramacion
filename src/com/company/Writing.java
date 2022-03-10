@@ -2,27 +2,25 @@ package com.company;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class Writing {
 
     FileWriter fich;
-    PrintWriter escribir;
+
 
     public  void escribirObxectos(String nomeFicheiro){
         try {
             ArrayList<Cliente>listadoReservas = ArrayMethods.añadirReserva();
-            fich = new FileWriter("listado de reservas.txt",true);
+            fich = new FileWriter("listadoDeReservas.txt");
+            fich.write("DNI    NOMBRE    TELEFONO    DIRECCION    CORREO ELECTRONICO    NUMERO HABITACIONES    TIPO DE HABITACION    TIPO DE CAMAS    VIP    GARAJE\n");
             for(Cliente cli:listadoReservas){
-                fich.write(cli.getDni()+"    "+cli.getNombre()+"    "+cli.getTelefono()+"    "+cli.getDireccion()+"   "+cli.getCorreoElectronico()+"    "+cli.getNumeroHabitacion()+"    "+cli.getTipoHabitacion()+"    "+cli.getTipoCamas()+"    "+cli.isVip()+"    "+cli.isGaraje());
+                fich.write(cli.getDni()+"    "+cli.getNombre()+"    "+cli.getTelefono()+"    "+cli.getDireccion()+"   "+cli.getCorreoElectronico()+"    "+cli.getNumeroHabitacion()+"    "+cli.getTipoHabitacion()+"    "+cli.getTipoCamas()+"    "+cli.isVip()+"    "+cli.isGaraje()+"\n");
             }
-
         } catch (IOException e) {
-            System.out.println("Erro de escritura 3" + e.getMessage());
+            System.out.println("Error de escritura 1" + e.getMessage());
         }
         finally {
-            escribir.close();
             try {
                 fich.close();
             } catch (IOException e) {

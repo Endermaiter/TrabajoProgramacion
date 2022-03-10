@@ -7,22 +7,31 @@
     </constraints>
     <properties>
       <background color="-5318526"/>
+      <focusTraversalPolicyProvider value="false"/>
+      <font name="Castellar"/>
+      <foreground color="-5318526"/>
       <opaque value="true"/>
       <visible value="true"/>
     </properties>
     <border type="none"/>
     <children>
-      <component id="ba1c4" class="javax.swing.JButton" binding="button1" default-binding="true">
+      <component id="ba1c4" class="javax.swing.JButton" binding="insertarReserva">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <borderPainted value="true"/>
+          <contentAreaFilled value="true"/>
+          <defaultCapable value="true"/>
+          <enabled value="true"/>
           <text value="Insertar Reserva"/>
+          <verticalAlignment value="1"/>
+          <visible value="true"/>
         </properties>
       </component>
       <component id="f7e4c" class="javax.swing.JButton" binding="mostrarReservasButton" default-binding="true">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Mostrar Reservas"/>
@@ -30,7 +39,7 @@
       </component>
       <component id="7cac0" class="javax.swing.JButton" binding="eliminarReservaButton" default-binding="true">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Eliminar Reserva"/>
@@ -38,7 +47,7 @@
       </component>
       <component id="14f86" class="javax.swing.JButton" binding="consultarReservaButton" default-binding="true">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Consultar Reserva"/>
@@ -46,7 +55,7 @@
       </component>
       <component id="a49c3" class="javax.swing.JButton" binding="salirButton" default-binding="true">
         <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Salir"/>
@@ -54,7 +63,7 @@
       </component>
       <component id="d360e" class="javax.swing.JButton" binding="modificarReservaButton" default-binding="true">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Modificar Reserva"/>

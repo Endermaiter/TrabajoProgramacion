@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class Menu extends JFrame{
-    private JButton button1;
+    private JButton insertarReserva;
     private JButton mostrarReservasButton;
     private JButton eliminarReservaButton;
     private JButton consultarReservaButton;
@@ -18,19 +18,51 @@ public class Menu extends JFrame{
         super("RESERVAS DEL HOTEL");
         ArrayList<Cliente>listadoReservas = new ArrayList<>();
         setContentPane(panel1);
-        button1.addActionListener(new ActionListener() {
-            @Override
+
+        insertarReserva.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             ArrayMethods.añadirReserva();
-            }
-        });
-        mostrarReservasButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-            ArrayMethods.mostrarReservas(listadoReservas);
+            /*
+            Writing escritura = new Writing();
+            escritura.escribirObxectos("listadoDeReservas.txt");
+             */
             }
         });
 
+        mostrarReservasButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e2) {
+                ArrayMethods.mostrarReservas(listadoReservas);
+            }
+        });
+
+        eliminarReservaButton.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        consultarReservaButton.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        modificarReservaButton.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        salirButton.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+    }
 
     }
-}
+

@@ -8,18 +8,14 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<Cliente> reservas = new ArrayList<Cliente>();
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
                 JFrame frame = new Menu();
-                frame.setSize(300,300);
+                frame.setSize(600,600);
                 frame.setVisible(true);
             }
         });
-
-        Writing escritura = new Writing();
-        escritura.escribirObxectos("listado de reservas");
         /*
         ArrayList<Cliente>listadoReservas = new ArrayList<>();
 

@@ -5,7 +5,7 @@ import marcos.pack.LerDatos;
 import javax.swing.*;
 import java.util.ArrayList;
 
-public class ArrayMethods extends JFrame {
+public class ArrayMethods{
 
     public static ArrayList<Cliente> añadirReserva(){
         ArrayList<Cliente>reservas = new ArrayList<>();
@@ -23,8 +23,6 @@ public class ArrayMethods extends JFrame {
     }
 
     public static void mostrarReservas(ArrayList<Cliente>reservas){
-      JOptionPane.showMessageDialog(null,"DNI    NOMBRE    TELEFONO   DIRECCION    CORREO ELECTRONICO   NUMERO HABITACIONES    TIPO DE HABITACION    TIPO DE CAMAS    VIP   GARAJE");
-
         for(int i=0; i< reservas.size(); i++){
             JOptionPane.showMessageDialog(null, reservas);
      }
