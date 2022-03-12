@@ -12,7 +12,7 @@ public class Menu extends JFrame{
     private JButton consultarReservaButton;
     private JButton salirButton;
     private JPanel panel1;
-    private JButton modificarReservaButton;
+
 
     public Menu() {
         super("RESERVAS DEL HOTEL");
@@ -21,7 +21,7 @@ public class Menu extends JFrame{
 
         insertarReserva.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            ArrayMethods.añadirReserva();
+            ArrayMethods.añadirReserva(listadoReservas);
             /*
             Writing escritura = new Writing();
             escritura.escribirObxectos("listadoDeReservas.txt");
@@ -38,23 +38,18 @@ public class Menu extends JFrame{
         eliminarReservaButton.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {
-
+                ArrayMethods.eliminarReservas(listadoReservas);
             }
         });
 
         consultarReservaButton.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {
-
+                ArrayMethods.consultarReservas(listadoReservas);
             }
         });
 
-        modificarReservaButton.addActionListener(new ActionListener() {
 
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
 
         salirButton.addActionListener(new ActionListener() {
 

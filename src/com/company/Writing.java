@@ -8,7 +8,7 @@ public class Writing {
 
     FileWriter fich;
 
-
+/*
     public  void escribirObxectos(String nomeFicheiro){
         try {
             ArrayList<Cliente>listadoReservas = ArrayMethods.añadirReserva();
@@ -29,7 +29,7 @@ public class Writing {
         }
     }
 
-
+*/
 
 
 

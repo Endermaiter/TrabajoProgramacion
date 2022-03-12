@@ -12,6 +12,8 @@ public class Cliente {
     private boolean vip;
     private boolean garaje;
 
+    public Cliente (){}
+
     public Cliente(String dni, String nombre, int telefono, String direccion, String correoElectronico, int numeroHabitacion, String tipoHabitacion, String tipoCamas, boolean vip, boolean garaje) {
         this.dni = dni;
         this.nombre = nombre;
