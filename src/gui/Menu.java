@@ -1,4 +1,7 @@
-package com.company;
+package gui;
+
+import com.company.ArrayMethods;
+import com.company.Cliente;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -18,11 +21,15 @@ public class Menu extends JFrame{
         super("RESERVAS DEL HOTEL");
         ArrayList<Cliente>listadoReservas = new ArrayList<>();
         setContentPane(panel1);
+        ArrayMethods arrayM = new ArrayMethods();
 
         insertarReserva.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            ArrayMethods.añadirReserva(listadoReservas);
+                Registro gui = new Registro();
+                gui.setVisible(true);
+                gui.setSize(1000,1000);
             /*
+            ArrayMethods.añadirReserva(listadoReservas);
             Writing escritura = new Writing();
             escritura.escribirObxectos("listadoDeReservas.txt");
              */
@@ -31,7 +38,7 @@ public class Menu extends JFrame{
 
         mostrarReservasButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e2) {
-                ArrayMethods.mostrarReservas(listadoReservas);
+                arrayM.mostrarReservas(listadoReservas);
             }
         });
 

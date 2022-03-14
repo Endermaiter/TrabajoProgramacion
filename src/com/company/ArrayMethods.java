@@ -3,30 +3,22 @@ package com.company;
 import marcos.pack.LerDatos;
 
 import javax.swing.*;
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public class ArrayMethods{
 
     static  Cliente  cli ;
-
-    public static ArrayList<Cliente> añadirReserva(ArrayList<Cliente>reservas){
-
-        reservas.add(new Cliente(LerDatos.lerString("Inserte el DNI:"),
-                                 LerDatos.lerString("Inserte el nombre:"),
-                                 LerDatos.lerInt("Inserte el TLF:"),
-                                 LerDatos.lerString("Inserte la direccion:"),
-                                 LerDatos.lerString("Inserte el correo electronico:"),
-                                 LerDatos.lerInt("Inserte el numero de habitacion:"),
-                                 LerDatos.lerString("Inserte el tipo de habitacion"),
-                                 LerDatos.lerString("Inserte el tipo de camas:"),
-                                 LerDatos.lerBoolean("¿El cliente es VIP? (true/false)"),
-                                 LerDatos.lerBoolean("¿El cliente usara la plaza de garaje? (true/false)")));
+    ArrayList<Cliente>reservas = new ArrayList<>();
+    public ArrayList<Cliente> añadirReserva(String dni,String nombre,int telefono,String direccion, String correoElectronico,int numeroHabitacion,String tipoHabitacion,String tipoCamas,boolean vip,boolean garaje){
+        reservas.add(new Cliente(dni,nombre,telefono,direccion,correoElectronico,numeroHabitacion,tipoHabitacion,tipoCamas,vip,garaje));
         return reservas;
     }
 
     public static void mostrarReservas(ArrayList<Cliente>reservas){
+        System.out.println("DNI    NOMBRE    TELEFONO    DIRECCION    CORREO ELECTRONICO    NUMERO HABITACIONES    TIPO DE HABITACION    TIPO DE CAMAS    VIP    GARAJE");
         for(int i=0; i< reservas.size(); i++){
-            JOptionPane.showMessageDialog(null, reservas.get(i));
+            System.out.println(reservas.get(i));
      }
     }
 
