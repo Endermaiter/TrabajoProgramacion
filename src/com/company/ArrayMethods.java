@@ -9,14 +9,14 @@ import java.util.ArrayList;
 public class ArrayMethods{
 
     static  Cliente  cli ;
-    ArrayList<Cliente>reservas = new ArrayList<>();
-    public ArrayList<Cliente> añadirReserva(String dni,String nombre,int telefono,String direccion, String correoElectronico,int numeroHabitacion,String tipoHabitacion,String tipoCamas,boolean vip,boolean garaje){
+
+    public static ArrayList<Cliente> añadirReserva(ArrayList<Cliente>reservas, String dni,String nombre,int telefono,String direccion, String correoElectronico,int numeroHabitacion,String tipoHabitacion,String tipoCamas,boolean vip,boolean garaje){
         reservas.add(new Cliente(dni,nombre,telefono,direccion,correoElectronico,numeroHabitacion,tipoHabitacion,tipoCamas,vip,garaje));
         return reservas;
     }
 
     public static void mostrarReservas(ArrayList<Cliente>reservas){
-        System.out.println("DNI    NOMBRE    TELEFONO    DIRECCION    CORREO ELECTRONICO    NUMERO HABITACIONES    TIPO DE HABITACION    TIPO DE CAMAS    VIP    GARAJE");
+        System.out.println("DNI             NOMBRE             TELEFONO             DIRECCION             CORREO ELECTRONICO             NUMERO HABITACIONES              TIPO DE HABITACION             TIPO DE CAMAS              VIP              GARAJE");
         for(int i=0; i< reservas.size(); i++){
             System.out.println(reservas.get(i));
      }

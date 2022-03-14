@@ -25,7 +25,7 @@ public class Registro extends JFrame {
     private JLabel mensajeLabel;
     private JPanel panel2;
 
-    public Registro() {
+    public Registro(ArrayList<Cliente>reservas) {
         super("REGISTRO");
         setContentPane(panel2);
         registrarReservaButton.addActionListener(new ActionListener() {
@@ -43,7 +43,7 @@ public class Registro extends JFrame {
                 String tipoCamas = textFieldTCamas.getText();
                 boolean vip = Boolean.parseBoolean(textFieldVIP.getText());
                 boolean garaje = Boolean.parseBoolean(textFieldGaraje.getText());
-                arrayM.añadirReserva(dni,nombre,telefono,direccion,correo,numeroHabitacion,tipoHabtacion,tipoCamas,vip,garaje);
+                ArrayMethods.añadirReserva(reservas,dni,nombre,telefono,direccion,correo,numeroHabitacion,tipoHabtacion,tipoCamas,vip,garaje);
                 mensajeLabel.setText("¡Cliente registrado correctamente!");
             }
         });

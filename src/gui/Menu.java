@@ -25,9 +25,9 @@ public class Menu extends JFrame{
 
         insertarReserva.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Registro gui = new Registro();
+                Registro gui = new Registro(listadoReservas);
                 gui.setVisible(true);
-                gui.setSize(1000,1000);
+                gui.setSize(750,750);
             /*
             ArrayMethods.añadirReserva(listadoReservas);
             Writing escritura = new Writing();
