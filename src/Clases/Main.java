@@ -1,4 +1,4 @@
-package com.company;
+package Clases;
 
 import gui.Menu;
 import gui.Registro;
@@ -12,8 +12,9 @@ public class Main {
             @Override
             public void run() {
                 JFrame frame = new Menu();
-                frame.setSize(600,600);
+                frame.setSize(600,800);
                 frame.setVisible(true);
+                frame.setLocationRelativeTo(null);
             }
         });
     }

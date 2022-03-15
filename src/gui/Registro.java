@@ -1,7 +1,7 @@
 package gui;
 
-import com.company.ArrayMethods;
-import com.company.Cliente;
+import Clases.Cliente;
+import Clases.Writing;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -42,7 +42,9 @@ public class Registro extends JFrame {
                 boolean vip = Boolean.parseBoolean(textFieldVIP.getText());
                 boolean garaje = Boolean.parseBoolean(textFieldGaraje.getText());
 
-                ArrayMethods.añadirReserva(reservas,dni,nombre,telefono,direccion,correo,numeroHabitacion,tipoHabtacion,tipoCamas,vip,garaje);
+                Writing write = new Writing();
+                write.escribirReservas(reservas,dni,nombre,telefono,direccion,correo,numeroHabitacion,tipoHabtacion,tipoCamas,vip,garaje);
+
 
                 mensajeLabel.setText("¡Cliente registrado correctamente!");
             }

@@ -1,7 +1,7 @@
 package gui;
 
-import com.company.ArrayMethods;
-import com.company.Cliente;
+import Clases.ArrayMethods;
+import Clases.Cliente;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -27,12 +27,8 @@ public class Menu extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 Registro gui = new Registro(listadoReservas);
                 gui.setVisible(true);
-                gui.setSize(750,750);
-            /*
-            ArrayMethods.añadirReserva(listadoReservas);
-            Writing escritura = new Writing();
-            escritura.escribirObxectos("listadoDeReservas.txt");
-             */
+                gui.setSize(750,950);
+                gui.setLocationRelativeTo(null);
             }
         });
 

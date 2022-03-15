@@ -1,4 +1,4 @@
-package com.company;
+package Clases;
 
 public class Cliente {
     private String dni;
