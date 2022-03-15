@@ -109,16 +109,16 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return  dni + "    " +
-                nombre + "  " +
-                telefono + "  " +
-                direccion + "  " +
-                correoElectronico + "  " +
-                numeroHabitacion + "  " +
-                tipoHabitacion + " " +
-                tipoCamas + " " +
-                vip + " " +
-                garaje;
+        return  "DNI: "+ dni + "  " +
+                "Nombre: "+ nombre + "  " +
+                "Telefono: "+ telefono + "  " +
+                "Dirección: "+ direccion + "  " +
+                "Email: "+ correoElectronico + "  " +
+                "Numero de Habitación: "+ numeroHabitacion + "  " +
+                "Tipo de Habitación: "+ tipoHabitacion + " " +
+                "Tipo de camas: "+ tipoCamas + " " +
+                "V.I.P.: "+ vip + " " +
+                "Garaje: "+ garaje+"\n";
 
     }
 }

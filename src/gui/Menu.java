@@ -34,7 +34,7 @@ public class Menu extends JFrame{
 
         mostrarReservasButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e2) {
-                arrayM.mostrarReservas(listadoReservas);
+                ArrayMethods.mostrarReservas(listadoReservas);
             }
         });
 

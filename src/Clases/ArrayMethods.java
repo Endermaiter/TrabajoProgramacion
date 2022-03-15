@@ -1,5 +1,7 @@
 package Clases;
 
+import trabajoProg.MetodosTrabajo;
+
 import javax.swing.*;
 import java.util.ArrayList;
 
@@ -13,16 +15,15 @@ public class ArrayMethods{
     }
 
     public static void mostrarReservas(ArrayList<Cliente>reservas){
-        System.out.println("DNI             NOMBRE             TELEFONO             DIRECCION             CORREO ELECTRONICO             NUMERO HABITACIONES              TIPO DE HABITACION             TIPO DE CAMAS              VIP              GARAJE");
-        for(int i=0; i< reservas.size(); i++){
-            System.out.println(reservas.get(i));
-     }
+
+            JOptionPane.showMessageDialog(null,reservas);
+
     }
 
 
     public  static  ArrayList<Cliente>  eliminarReservas(ArrayList<Cliente>reservas){
 
-     String pedirDni= JOptionPane.showInputDialog("Inserte el dni registrado en la reserva  que desea eliminar:") ;
+     String pedirDni= MetodosTrabajo.leerString("Inserte el dni registrado en la reserva  que desea eliminar:");
      for (int i = 0; i<reservas.size();i++){
         if (reservas.get(i).getDni().equals(pedirDni)){
             reservas.remove(i);
@@ -36,7 +37,7 @@ public class ArrayMethods{
     }
 
     public static  ArrayList<Cliente> consultarReservas (ArrayList<Cliente>reservas){
-        String pedirDni= JOptionPane.showInputDialog("Inserte el dni registrado en la reserva  que desea consultar:") ;
+        String pedirDni= MetodosTrabajo.leerString("Inserte el dni registrado en la reserva  que desea consultar:");
         for (int i = 0; i<reservas.size();i++){
             if (reservas.get(i).getDni().equals(pedirDni)){
             JOptionPane.showMessageDialog(null,reservas.get(i));

@@ -29,6 +29,7 @@ public class Registro extends JFrame {
         super("REGISTRO");
         setContentPane(panel2);
         registrarReservaButton.addActionListener(new ActionListener() {
+
             public void actionPerformed(ActionEvent e) {
 
                 String dni = textFieldDNI.getText();

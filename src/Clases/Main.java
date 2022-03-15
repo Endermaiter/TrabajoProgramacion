@@ -1,7 +1,6 @@
 package Clases;
 
 import gui.Menu;
-import gui.Registro;
 
 import javax.swing.*;
 
