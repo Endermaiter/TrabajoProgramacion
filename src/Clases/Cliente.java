@@ -31,81 +31,43 @@ public class Cliente {
         return dni;
     }
 
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
-
     public String getNombre() {
         return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public int getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
-
     public String getDireccion() {
         return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
     }
 
     public String getCorreoElectronico() {
         return correoElectronico;
     }
 
-    public void setCorreoElectronico(String correoElectronico) {
-        this.correoElectronico = correoElectronico;
-    }
-
     public int getNumeroHabitacion() {
         return numeroHabitacion;
-    }
-
-    public void setNumeroHabitacion(int numeroHabitacion) {
-        this.numeroHabitacion = numeroHabitacion;
     }
 
     public String getTipoHabitacion() {
         return tipoHabitacion;
     }
 
-    public void setTipoHabitacion(String tipoHabitacion) {
-        this.tipoHabitacion = tipoHabitacion;
-    }
-
     public String getTipoCamas() {
         return tipoCamas;
-    }
-
-    public void setTipoCamas(String tipoCamas) {
-        this.tipoCamas = tipoCamas;
     }
 
     public boolean isVip() {
         return vip;
     }
 
-    public void setVip(boolean vip) {
-        this.vip = vip;
-    }
-
     public boolean isGaraje() {
         return garaje;
     }
 
-    public void setGaraje(boolean garaje) {
-        this.garaje = garaje;
-    }
+
 
     @Override
     public String toString() {
